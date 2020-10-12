@@ -31,13 +31,15 @@
       "plugin": "upload",
       "required": false
     },
-    "hobbies": {
-      "type": "string"
-    },
     "capacities": {
       "collection": "capacity",
       "via": "unicorns",
       "dominant": true
+    },
+    "hobbies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hobby.hobby"
     }
   }
 }

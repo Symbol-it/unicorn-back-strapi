@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_hobby_hobbies",
+  "info": {
+    "name": "hobby",
+    "icon": "futbol"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    }
+  }
+}

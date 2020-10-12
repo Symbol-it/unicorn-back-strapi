@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unicorns",
+  "info": {
+    "name": "unicorn",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "birthyear": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "hobbies": {
+      "type": "string"
+    },
+    "capacities": {
+      "collection": "capacity",
+      "via": "unicorns",
+      "dominant": true
+    }
+  }
+}

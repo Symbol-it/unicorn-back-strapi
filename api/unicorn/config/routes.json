@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/unicorns",
+      "handler": "unicorn.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/unicorns/count",
+      "handler": "unicorn.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/unicorns/:id",
+      "handler": "unicorn.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/unicorns",
+      "handler": "unicorn.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/unicorns/:id",
+      "handler": "unicorn.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/unicorns/:id",
+      "handler": "unicorn.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

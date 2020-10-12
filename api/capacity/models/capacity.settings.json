@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capacities",
+  "info": {
+    "name": "capacity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "unicorns": {
+      "via": "capacities",
+      "collection": "unicorn"
+    }
+  }
+}

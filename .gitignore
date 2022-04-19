@@ -108,3 +108,4 @@ license.txt
 exports
 .cache
 build
+public/uploads
